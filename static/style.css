@@ -1,0 +1,88 @@
+body {
+    position: relative;
+}
+
+#home-container {
+    height: 200px;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    border-bottom: 2px solid royalblue;
+}
+
+ul.nav li a {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+ul.nav li a {
+    background-color: royalblue;
+    width: 100%;
+}
+
+#services h4, #portfolio h4, #contact h4 {
+    text-align: center;
+}
+
+#services div#articles {
+    float: right;
+}
+
+#services div#contact-row {
+    float: right;
+    text-align: center;
+    margin-right: 27%
+}
+
+#services, #contact {
+     border-bottom: 2px solid royalblue;
+}
+
+.portfolio-images img {
+    width: 20%;
+}
+
+#images-content {
+    margin-left: 30%;
+    margin-bottom: 2%;
+}
+
+#portfolio {
+  border-bottom: 2px solid royalblue;
+}
+
+#submit-button {
+    float: right;
+}
+
+#input-small input {
+    height: 20%;
+}
+
+div#contact {
+    margin-top: 2%;
+}
+
+#contact form .input-small {
+    margin-left: 15%;
+}
+
+#contact form #submit-button {
+    margin-top: 2%;
+    margin-right: 25%;
+}
+
+#contact form {
+    margin-bottom: 2%;
+}
+
+footer {
+    margin-top: 4%;
+}
+
+footer #site-links a {
+    display: block;
+    width: 100%;
+    float: left;
+}

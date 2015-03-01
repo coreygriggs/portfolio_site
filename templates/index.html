@@ -1,0 +1,109 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="col-sm-12">
+                <ul class="nav nav-justified navbar-fixed-top">
+                    <li class="col-sm-4"><a href="#home">HOME</a></li>
+                    <li class="col-sm-4"><a href="#services">SERVICES</a></li>
+                    <li class="col-sm-4"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="col-sm-4"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="home" class="row col-sm-12">
+            <div id="home-container" class="col-sm-12">
+                <h1>Welcome</h1>
+            </div>
+        </div>
+        <div id="services" class="row col-sm-12">
+            <h4>SERVICES</h4>
+            <div id="articles" class="col-sm-9">
+                <article class="col-sm-3">
+                   <img src="#" />
+                   <div class="title">
+                        <h5 class="text-justify">Design</h5>
+                   </div>
+                   <div class="description">
+                       <p>Fixie kogi trust fund, lumbersexual ethical Helvetica leggings fap Thundercats hella.
+                           Scenester normcore stumptown Portland, shabby chic kitsch Banksy chia mixtape irony Pinterest
+                           small batch taxidermy. Chia art party selvage, asymmetrical hella Austin Kickstarter disrupt
+                           jean shorts. Tilde actually Marfa raw denim VHS, squid mixtape 90's pickled fap migas before
+                           they sold out dreamcatcher banjo.</p>
+                   </div>
+                </article>
+                <article class="col-sm-3">
+                   <img src="#" />
+                   <div class="title">
+                        <h5>Development</h5>
+                   </div>
+                   <div class="description">
+                       <p class="text-justify">Fixie kogi trust fund, lumbersexual ethical Helvetica leggings fap Thundercats hella.
+                           Scenester normcore stumptown Portland, shabby chic kitsch Banksy chia mixtape irony Pinterest
+                           small batch taxidermy. Chia art party selvage, asymmetrical hella Austin Kickstarter disrupt
+                           jean shorts. Tilde actually Marfa raw denim VHS, squid mixtape 90's pickled fap migas before
+                           they sold out dreamcatcher banjo.</p>
+                   </div>
+                </article>
+                <article class="col-sm-3">
+                   <img src="#" />
+                   <div class="title">
+                        <h5 class="text-justify">UX</h5>
+                   </div>
+                   <div class="description">
+                       <p class="text-justify">Fixie kogi trust fund, lumbersexual ethical Helvetica leggings fap Thundercats hella.
+                           Scenester normcore stumptown Portland, shabby chic kitsch Banksy chia mixtape irony Pinterest
+                           small batch taxidermy. Chia art party selvage, asymmetrical hella Austin Kickstarter disrupt
+                           jean shorts. Tilde actually Marfa raw denim VHS, squid mixtape 90's pickled fap migas before
+                           they sold out dreamcatcher banjo.</p>
+                   </div>
+                </article>
+            </div>
+            <div id="contact-row" class="row col-sm-5">
+                <p><a href="#contact">Contact us for more details</a></p>
+            </div>
+        </div>
+        <div id="portfolio" class="row col-sm-12">
+            <div class="title col-sm-12">
+                <h4 class="text-justify">PORTFOLIO</h4>
+            </div>
+            <div class="portfolio-images col-sm-12">
+                <!-- add in image grabber -->
+                <div id="images-content">
+                    <img src="#" />
+                    <img src="#" />
+                    <img src="#" />
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="row col-sm-12">
+            <div class="title col-sm-12">
+                <h4 class="text-justify">CONTACT</h4>
+            </div>
+            <form class="col-sm-12">
+                <div class="input-small col-sm-3">
+                    <input type="text" class="form-control" placeholder="Name" />
+                    <input type="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="col-sm-6">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div id="submit-button" class="col-sm-6">
+                    <input type="submit" class="form-control col-sm-3 btn" value="Send" />
+                </div>
+            </form>
+        </div>
+        <footer class="row col-sm-12">
+            <div id="site-links col-sm-3">
+                <a href="#">Link somewhere</a>
+                <a href="#">Somewhere else</a>
+                <a href="#">Even different</a>
+            </div>
+        </footer>
+    </div>
+{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script type="javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock %}
